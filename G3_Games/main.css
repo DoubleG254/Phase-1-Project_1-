@@ -1,0 +1,40 @@
+#header{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    padding: 10px;
+    background-clip: text;
+    color: white;
+    background: linear-gradient(to right, #9cac12, #0ebbff)
+}
+#title{
+    display: flex;
+    font-size: larger;
+    color: black;
+    
+}
+#logo{
+    border-radius: 50%;
+    width: 100px;
+}
+body{
+  background-color:  rgb(218, 214, 214);
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 400px;
+    font-size: large;
+    position: absolute;
+    top: 30px;
+}
+
+#linux{
+    margin: auto;
+    width: 80%;
+}
