@@ -65,11 +65,15 @@ ul{
     height: 30px;
 }
 #cart{
-    width: 700px;
-    margin:0;
-    right:1;
-    background: linear-gradient(to right, #9cac12, #0ebbff)
+    width: 500px;
+    margin-left: 820px;
+    
+    background: linear-gradient(to right, #9cac12, #0ebbff);
+    height:600px;
 }
 .list{
+    font-size: large;
+}
+footer{
     font-size: large;
 }
