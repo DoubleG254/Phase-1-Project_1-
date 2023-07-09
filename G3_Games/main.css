@@ -38,3 +38,20 @@ ul{
     margin: auto;
     width: 80%;
 }
+.game{
+    background-color: antiquewhite;
+    width: 300px;
+}
+.game:first-child{
+    grid-column-start: 1; 
+  grid-row-start: 1;
+}
+.gamage{
+    width: 300px;
+    height: 350px;
+}
+#games{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 10px;
+}

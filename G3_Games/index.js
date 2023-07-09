@@ -5,14 +5,15 @@ function gameList(games) {
   let game = document.createElement("div");
   game.className="game"
   game.innerHTML = `
-    <img src="${games.image}" alt="game image" id="gamage">
+    <img src="${games.image}" alt="game image" class="gamage">
     <h2>${games.name}</h2>
-    <button id="declare">System Requirement</button>
+    <button class="declare">System Requirement</button>
     <button>Add to Cart</button>
   `;
   lister.appendChild(game);
-  let declare=document.querySelector("#declare")
-  declare.addEventListener("click",()=>{
+  let declareButtons=document.querySelectorAll(".declare")
+  declareButtons.forEach((declareButton)=>{
+    declareButton.addEventListener("click",()=>{
       let system = document.createElement("div")
       system.className="system"
       system.innerHTML=`
@@ -21,6 +22,10 @@ function gameList(games) {
       <p>Storage : ${games.storage}</p>`
       game.appendChild(system)
   })
+  })
+   
+  
+  
  
 }
 
