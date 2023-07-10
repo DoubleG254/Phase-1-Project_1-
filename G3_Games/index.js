@@ -1,4 +1,7 @@
-document.addEventListener("DOMContentLoaded", fetchData);
+document.addEventListener("DOMContentLoaded", ()=>{
+  fetchData();
+  feedback()
+});
 
 function gameList(games) {
 //Display games 
@@ -31,7 +34,7 @@ let cartAdd=game.querySelector(".cartAdd")
     let ul= document.querySelector(".list")
     ul.appendChild(li);
   })
-
+ 
 
   }
   
@@ -42,6 +45,18 @@ function fetchData() {
     .then(games => {
       games.forEach(game => gameList(game));
     });
+}
+//Feedback display
+function feedback(){
+  let form =document.querySelector("#feedback")
+form.addEventListener("submit",(e)=>{
+e.preventDefault();
+let respond=document.querySelector("#respond").value
+let response=document.querySelector("#response")
+let p = document.createElement("p")
+p.innerHTML=`${respond}`
+response.appendChild(p)
+})
 }
 
 
