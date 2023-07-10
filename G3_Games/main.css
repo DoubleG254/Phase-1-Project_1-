@@ -32,6 +32,7 @@ ul{
     font-size: large;
     position: absolute;
     top: 30px;
+    color: blue;
 }
 
 #linux{
@@ -67,7 +68,7 @@ ul{
 #cart{
     width: 500px;
     margin-left: 820px;
-    
+    margin-top: -450px;
     background: linear-gradient(to right, #9cac12, #0ebbff);
     height:600px;
 }
@@ -76,4 +77,9 @@ ul{
 }
 footer{
     font-size: large;
+}
+#search{
+    position: absolute;
+    top: 45px;
+    left: 900px;
 }

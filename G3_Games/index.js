@@ -29,10 +29,12 @@ let cartAdd=game.querySelector(".cartAdd")
 
     li.innerHTML=`${games.name}`
     let ul= document.querySelector(".list")
-    ul.appendChild(li)
-
+    ul.appendChild(li);
   })
+
+
   }
+  
 //Fetch game data from the server
 function fetchData() {
   fetch("http://localhost:3000/games")
