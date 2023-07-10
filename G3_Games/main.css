@@ -83,14 +83,15 @@ footer{
     height: 50px;
 }
 #consumer{
-    display: flex;
-    flex-direction: row;
+    display:gird ;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 10px;
+    
+    
 }
 #feedback{
     background: linear-gradient(to right, #9cac12, #0ebbff);
-    position: absolute;
-    top:2300px;
-    left: 500px;
+   
     width: 700px;
     height: 400px;
 }

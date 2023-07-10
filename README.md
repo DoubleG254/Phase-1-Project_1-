@@ -1,1 +1,11 @@
-# Phase-1-Project_1-
+# G3_Gaming
+
+# Description
+
+# Usage
+
+# Technologies used
+
+# Author
+
+# License
